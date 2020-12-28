@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang=tr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="txtMidTerms">MidTerms :
+        <input type="text" name="txtMidTerms" id="txtMidTerms">
+    </label>
+
+    <label for="txtOnlinePlatforms">OnlinePlatforms :
+        <input type="text" name="txtOnlinePlatforms" id="txtOnlinePlatforms">
+    </label>
+
+    <label for="txtWritingPortfolio">WritingPortfolio :
+        <input type="text" name="txtWritingPortfolio" id="txtWritingPortfolio">
+    </label>
+
+    <label for="txtAnnouncedQuizzes">AnnouncedQuizzes :
+        <input type="text" name="txtAnnouncedQuizzes" id="txtAnnouncedQuizzes">
+    </label>
+
+    <label for="txtSpeakingAssesment">SpeakingAssessment :
+        <input type="text" name="txtSpeakingAssesment" id="txtSpeakingAssesment">
+    </label>
+
+    <input type="button" name="button" id="hesapla" value="HESAPLA">
+    <div id="sonuc"></div>
+
+
+
+<script>
+        var txtMidTerms             =document.getElementById("txtMidTerms");
+	    var txtOnlinePlatforms      =document.getElementById("txtOnlinePlatforms");
+        var txtWritingPortfolio     =document.getElementById("txtWritingPortfolio");
+        var txtAnnouncedQuizzes     =document.getElementById("txtAnnouncedQuizzes");
+        var txtSpeakingAssessment   =document.getElementById("txtSpeakingAssessment");
+        var btnHesapla              =document.getElementById("Hesapla");
+        var sonucDiv                =document.getElementById("sonuc");
+
+    btnHesapla.onclick=function() {
+
+        var MidTerms            =Number(txtMidTerms.value);
+        var OnlinePlatforms     =Number(txtOnlinePlatforms.value);
+        var WritingPortfolio    =Number(txtWritingPortfolio.value);
+        var AnnouncedQuizzes    =Number(txtAnnouncedQuizzes.value);
+        var SpeakingAssessment  =Number(txtSpeakingAssessment.value);
+        var Avarage=(MidTerms*40/100)+(OnlinePlatforms*20/100)+(WritingPortfolio*20/100)+(AnnouncedQuizzes*10/100)+(SpeakingAssessment*10/100)
+        var durum="";
+
+
+        if  (Avarage>=49.50 && Avarage<64.50)
+            {
+                durum="Ağustos ve Eylül İYS'leri için hak kazandınız.";
+            }
+        else if (Avarage>=64.50)
+            {
+                durum="Haziran, Ağustos ve Eylül İYS'leri için hak kazandınız.";
+            }
+        else 
+            {
+                durum="Eylül İYS için hak kazandınız.";
+            }
+            document.getElementById("lblsonucDiv").innerHTML="Notunuz:" + Avarage +"<br>"+durum; 
+    }
+</script>
+</body>
+</html>
