@@ -56,12 +56,10 @@ div{
     display: table-header-group; 
 }
 .SYNews{
-    display: inline-block;
-    zoom: 1;
     vertical-align: top;
     font-size: 12px;
-    position: static;
     justify-content: center;
+    float: left;
 }
 .SY-quarter{
     display:inline-block;
@@ -147,116 +145,37 @@ div{
     border: 2px rgba(158, 156, 156, 0.849) solid;
     max-width: 300px;
 }
-.Footer-bottom{
-    width: 50%;
-    flex: 0 0 auto;
-    flex-direction: row;
-    display: flex;
-    font-weight: 400;
-    color: #1ed760;
-    box-sizing: border-box;
-    width: 50%;
-    box-sizing:border-box;
-    display:flex;
-    float:none;
-    line-height:normal;
-    position:static;
+.footer{
+    background-color: black;
+    width:100%;
+    height: 400px;
+    float: left;
 }
-.Footer-bottom-left{
-    margin: 20px 0;
-    color: black;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    box-sizing:border-box;
-    display:block;
-    float:none;
-    line-height:normal;
-    position:static;
-
+.footer-nav{
+    background-color: #0872b9;
+        width: 640px; /* Can be in percentage also. */
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+        float: left;
+        text-align: center;
 }
-.Footer-bottom li.Footer-bottom-left{
+.footer-logo{
+    float: left;
+    width: 20%;
+    text-align: left;
+}
+.footer-menu{
+    float:left;
+}
+.footer-links-left{
     padding: 0 15px;
-    box-sizing: border-box;
-    font-weight: 900;
-    flex: 1 0;
-    color: #1ed760;
-    box-sizing:border-box;
-    display:block;
-    float:none;
-    line-height:16.8px;
-    position:static;
+    /* float: left; */
 }
-.Footer-bottom li.Footer-bottom-left ul li.Footer-bottom-left-primary{
-    padding: 3px 0 15px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    text-decoration: none;
-    color: black;
-    box-sizing: border-box;
-    float: none;
-    line-height: normal;
-    position: static;
-    display:block;
+/* .footer-links-mid{
+    float: left;
 }
-.Footer-bottom li.Footer-bottom-left ul li.Footer-bottom-left-primary:hover{
-    color:#1ed760;
-}
-
-.Footer-bottom li.Footer-bottom-mid{
-    padding: 0 15px;
-    margin: 0;
-    flex: 1 0;
-    box-sizing: border-box;
-    font-weight: 400;
-    color: #1ed760;
-    float: none;
-    line-height: normal;
-    position: static;
-    display:block;
-}   
-.Footer-bottom li.Footer-bottom-mid ul li.Footer-bottom-mid-primary{
-    margin: 20px 0;
-    color: black;
-    font-size: 12px;
-    font-weight: 900;
-    line-height: 1.4;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    box-sizing: border-box;
-    display:block;
-    float: none;
-    line-height: 16.8px;
-    position: static;
-}
-.Footer-bottom li.Footer-bottom-right{
-    padding: 0 15px;
-    margin: 0;
-    flex: 1 0;
-    box-sizing: border-box;
-    font-weight: 400;
-    color: #1ed760;
-    box-sizing: border-box;
-    display:block;
-    float: none;
-    line-height: normal;
-    position: static;
-}
-
-.Footer-bottom li.Footer-bottom-right ul li.Footer-bottom-right-primary{
-    margin: 20px 0;
-    color: black;
-    font-size: 12px;
-    font-weight: 900;
-    line-height: 1.4;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    box-sizing: border-box;
-    display:block;
-    float: none;
-    line-height: 16.8px;
-    position: static;
-}
+.footer-links-right{
+    float:left;
+} */
