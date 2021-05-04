@@ -6,7 +6,7 @@
 }
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 ul.menu{
     background: #282A35;
@@ -82,10 +82,10 @@ div{
 .SY-Pagination li {
     float: left;
 }
-.SY-Pagination ul{
+.SY-Pagination > ul{
     display:flex;
     background-color: white;
-    float: left;
+    float: left; 
     left: 50%;
     position: relative;
 }
@@ -152,30 +152,97 @@ div{
     float: left;
 }
 .footer-nav{
-    background-color: #0872b9;
-        width: 640px; /* Can be in percentage also. */
+    background-color:black;
+        width: 900px; /* Can be in percentage also. */
         height: auto;
         margin: 0 auto;
         padding: 10px;
         position: relative;
-        float: left;
+        display: inline-block;
         text-align: center;
 }
 .footer-logo{
     float: left;
     width: 20%;
     text-align: left;
+    margin-top: 50px;
 }
 .footer-menu{
+    margin-top: 50px;
     float:left;
+    display: flex;
+    color: #626368;
 }
 .footer-links-left{
-    padding: 0 15px;
-    /* float: left; */
+    margin-block-end: 10px;
+    margin:5px;
+    display: block;
+    padding-left: 10px;
 }
-/* .footer-links-mid{
-    float: left;
+.footer-links-mid{
+    margin-block-end: 10px;
+    margin:5px;
+    display: block;
+    padding-left: 10px;
 }
 .footer-links-right{
+    margin-block-end: 10px;
+    margin:5px;
+    display: block;
+    padding-left: 10px;
+}
+.footer-social{
     float:left;
-} */
+    margin: 0 15px 0 auto;
+    display: block;
+    background-color: black;
+    width: 200px;
+    height: 356px;
+    padding-left: 25px;
+    margin-top: 50px;
+}
+.footer-social-icons{
+    margin-top: 50px;
+    margin: 20px 0 10px;
+    padding-left: 40px;
+    display: block;
+    float:left;
+    width: 300px;
+    height: 54px;
+}
+.footer-social-icons-dc{
+    margin-right: 20px;
+    display: inline-block;
+    position:absolute;
+    width: 48px;
+    height: 48px;
+    left: 0% !important;
+    line-height: inherit !important;
+    float: none !important;
+    border-radius: 50%;
+    background-color: #626368;
+}
+.footer-social-icons-tw{
+    margin-right: 20px;
+    display: inline-block;
+    position:absolute;
+    width: 48px;
+    height: 48px;
+    left: 0% !important;
+    line-height: inherit !important;
+    float: none !important;
+    border-radius: 50%;
+    background-color: #626368;
+}
+.footer-social-icons-ig{
+    margin-right: 20px;
+    display: inline-block;
+    position:absolute;
+    width: 48px;
+    height: 48px;
+    left: 0% !important;
+    line-height: inherit !important;
+    float: none !important;
+    border-radius: 50%;
+    background-color: #626368;
+}
