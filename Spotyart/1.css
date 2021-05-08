@@ -16,6 +16,9 @@ ul.menu >li{
     float:left;
     position:relative;
 }
+ul.menu li:hover{
+    background-color: #191a22;
+}
 ul.menu >li >a {
     display: block;
     font-size:14px;
@@ -24,7 +27,7 @@ ul.menu >li >a {
     line-height: 50px;
     border-right:1px solid white;
 }
-ul.menu ul {
+ul.menu li ul {
     background:#282A35;
     width: 100px;
     position: absolute;
@@ -35,7 +38,7 @@ ul.menu ul {
     display:none;
     visibility: hidden;
 }
-ul.menu ul li a {
+ul.menu li ul li a {
     display:block;
     padding:7px 12px;
     color: white;
@@ -46,8 +49,41 @@ ul.menu li:hover ul {
     visibility: visible;
     display:block;
     top:50px;
+    background-color: #191a22;
 }
-
+.header-login-signup{
+    float: right;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+ul.menu-login-signup{
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+ul.menu-login-signup li{
+    margin-right: 15px;
+    background-color: #04AA6D;
+    border-radius: 20px;
+    width: 75px;
+    margin-top: 5px;
+    height: 40px;
+}
+ul.menu-login-signup li a{
+    display:block;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px; 
+    color:white;
+}
+ul.menu-login-signup li:hover{
+    background-color:#038a58f3 ;
+}
 div{
     /*border: 2px #04AA6D  solid;*/
     float:left;
@@ -60,6 +96,8 @@ div{
     font-size: 12px;
     justify-content: center;
     float: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 .SY-quarter{
     display:inline-block;
@@ -167,6 +205,9 @@ div{
     text-align: left;
     margin-top: 50px;
 }
+.footer-logo:hover{
+    transform:scale(1.1);
+}
 .footer-menu{
     margin-top: 50px;
     float:left;
@@ -196,7 +237,7 @@ div{
     margin: 0 15px 0 auto;
     display: block;
     background-color: black;
-    width: 200px;
+    width: 220px;
     height: 356px;
     padding-left: 25px;
     margin-top: 50px;
@@ -217,10 +258,9 @@ div{
     width: 48px;
     height: 48px;
     left: 0% !important;
-    line-height: inherit !important;
     float: none !important;
     border-radius: 50%;
-    background-color: #626368;
+    background-color: #929396;
 }
 .footer-social-icons-tw{
     margin-right: 20px;
@@ -229,10 +269,9 @@ div{
     width: 48px;
     height: 48px;
     left: 0% !important;
-    line-height: inherit !important;
     float: none !important;
     border-radius: 50%;
-    background-color: #626368;
+    background-color: #929396;
 }
 .footer-social-icons-ig{
     margin-right: 20px;
@@ -241,8 +280,7 @@ div{
     width: 48px;
     height: 48px;
     left: 0% !important;
-    line-height: inherit !important;
     float: none !important;
     border-radius: 50%;
-    background-color: #626368;
+    background-color: #929396;
 }
