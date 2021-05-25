@@ -18,47 +18,8 @@
 }
 .nav-menu:hover{
     color: #1D8954;
-}
-nav li ul li a{
-    display: block;
-    color: black;
-    font-size: 1rem;
-    text-decoration: none;
-    align-items:center !important;
-    float: left !important;
-}
-nav li ul li a:hover{
-    color: #1D8954 !important;
-}
-nav li .nav-menu-genres{
-    position: absolute;
-    opacity: 0;
-    transition: 250ms all;
-    text-decoration: none;
-    list-style: none;
-    border: 1px solid black;
-}
-nav .nav-menu-genres:hover{
-    opacity: 1;
-    visibility: visible;
-    background-color: #F6BB42;
-    display: block;
-}
-nav li .nav-menu-dates{
-    position: absolute;
-    opacity: 0;
-    transition: 250ms all;
-    text-decoration: none;
-    list-style: none;
-    border: 1px solid black;
-}
-nav .nav-menu-dates:hover{
-    opacity: 1;
-    visibility: visible;
-    background-color: #F6BB42;
-    display: block;
-    color: #1D8954;
-    
+    border-bottom:1px solid #1D8954 !important;
+    transform: scale(1.1);
 }
 .carousel{
     border-right:1px solid black;
